@@ -1,0 +1,75 @@
+.header {
+    @apply w-full h-20
+}
+
+.navbar {
+    @apply w-[80%] h-full flex justify-evenly items-center mx-auto
+}
+
+.navbar>button {
+    @apply ml-7
+}
+
+.brand-box {
+    @apply flex
+}
+
+.brand-box>a {
+    @apply text-3xl uppercase font-bold
+}
+
+.brand-box>span {
+    @apply mx-2 uppercase font-bold
+}
+
+.navbar-list {
+    @apply w-[50%] flex justify-center gap-5
+}
+
+.navbar-list>* {
+    @apply w-20 h-7 my-auto text-center cursor-pointer transition-all delay-75
+}
+
+.navbar-list>*:hover {
+    @apply text-indigo-700 font-bold scale-110;
+}
+
+.active {
+    @apply text-indigo-700 font-bold
+}
+
+.search {
+    @apply w-40 flex relative
+}
+
+.searchInput {
+    @apply w-8 h-8 border border-indigo-900 rounded-[50%] bg-gradient-to-l from-indigo-900 to-indigo-800 text-center text-[18px] placeholder:text-white cursor-pointer;
+    font-family: FontAwesome;
+}
+
+.searchFocus {
+    @apply bg-gradient-to-l outline-none from-indigo-900 to-indigo-600 text-white cursor-text;
+    animation: search 0.8s ease-in-out forwards;
+}
+
+@keyframes search {
+    from {
+        width: 32px;
+        text-align: left;
+    }
+
+    to {
+        width: 220px;
+        border-radius: 5px;
+        text-align: left;
+        padding-inline: 25px;
+    }
+}
+
+.dark-mode {
+    @apply text-indigo-500 text-[32px] transition-all delay-75 hover:text-indigo-600
+}
+
+.light-mode {
+    @apply text-amber-400 text-[32px] transition-all delay-75 hover:text-amber-600
+}

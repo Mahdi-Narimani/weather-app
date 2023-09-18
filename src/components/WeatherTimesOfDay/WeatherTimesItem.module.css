@@ -1,0 +1,47 @@
+.weather-times__item {
+    @apply w-[300px] h-[450px] mx-5 shadow-indigo-50;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #f6f5f5, #eef2ff);
+    box-shadow: 8px 8px 16px #c7d2fe,
+        -8px -8px 16px #ffffff;
+        animation: showItem 1s ease-in forwards;
+}
+
+@keyframes showItem {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.badge-box {
+    @apply flex justify-around items-center
+}
+
+.badge-day {
+    @apply w-[100px] h-[30px] pt-[2.5px] bg-indigo-950 text-white font-bold rounded-[20px] m-[25px]
+}
+
+.badge-time {
+    @apply w-[100px] h-[30px] pt-[2.5px] bg-blue-500 text-white font-bold rounded-[20px] m-[25px]
+}
+
+
+.weather-box {
+    @apply flex flex-col items-center
+}
+
+.weather-box>img {
+    @apply w-[150px] mt-5
+}
+
+.temperature {
+    @apply text-[5rem] font-semibold text-black
+}
+
+.author-temp {
+    @apply text-[26px] font-semibold text-black
+}

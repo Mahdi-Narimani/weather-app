@@ -1,0 +1,71 @@
+.main-category__list {
+    @apply relative overflow-x-scroll;
+}
+
+.weather-status__list{
+    @apply  w-full my-5 absolute left-0 flex justify-start
+}
+.weather-status__list > button{
+    @apply cursor-pointer text-[20px] w-[100px] hover:text-blue-500 mx-3
+}
+.active{
+    @apply w-[100px] border-b-2 border-b-blue-600
+}
+.select-time{
+    @apply ml-auto mr-[43%] cursor-pointer w-[200px] border-b-2 border-b-blue-500 focus:outline-none
+}
+
+.weather-times__list {
+    @apply w-[2730px] h-[550px] overflow-x-hidden scroll-smooth flex flex-nowrap items-center mt-8 pt-[1rem];
+    animation: showList 1.5s ease-in-out;
+}
+
+@keyframes showList {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    animation: hiddenTitle 1.5s ease-out forwards;
+}
+
+@keyframes hiddenTitle {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+}
+
+.btn-prev {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    font-size: 2rem;
+    width: 90px;
+    height: 500px;
+    background: linear-gradient(90deg, #ffffff 40%, hsla(0, 0%, 100%, 0));
+    color: #007bff
+}
+
+.btn-next {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    font-size: 2rem;
+    width: 90px;
+    height: 500px;
+    background: linear-gradient(270deg, #ffffff 40%, hsla(0, 0%, 100%, 0));
+    color: #007bff
+}

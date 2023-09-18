@@ -1,0 +1,41 @@
+.weathers {
+    @apply max-w-[90%] h-[700px] my-14 mx-auto
+}
+
+.show-title {
+    display: block;
+    animation: showTitle 2s ease-in-out;
+}
+
+.show-title>h1 {
+    font-size: 50px;
+}
+
+@keyframes showTitle {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    font-size: 50px;
+    animation: hiddenTitle 2s ease-out forwards;
+}
+
+@keyframes hiddenTitle {
+    from {
+        transform: translateX(0);
+        opacity: .4;
+    }
+
+    to {
+        transform: translateX(200%);
+        opacity: 0;
+        }
+}

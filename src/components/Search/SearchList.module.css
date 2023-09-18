@@ -1,0 +1,17 @@
+.search-list {
+    @apply w-[220px] h-[110px] overflow-auto absolute top-[35px] bg-slate-200/[.8] text-center rounded-[5px] px-1;
+    animation: showList .5s ease-in-out forwards;
+}
+
+@keyframes showList {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

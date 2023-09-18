@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-white overflow-y-auto overflow-x-hidden
+}
+.dark{
+  @apply transition-all delay-100 bg-slate-900 text-zinc-100
+}
+
+.error-message{
+  @apply text-center text-[50px] mt-[5rem]
+}
+

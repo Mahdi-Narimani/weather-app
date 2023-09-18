@@ -1,0 +1,46 @@
+.start-page{
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+.start-page__background{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: url('/public/startpage2.jpg') center center/cover fixed;
+    /* filter: blur(1px); */
+}
+.start-page__btn{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(79, 79, 79, 0.526);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.start-page__btn > p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+}
+.start-page__btn > button{
+    width: 200px;
+    height: 50px;
+    background-color: #228dffba;
+    border-bottom: 8px solid rgb(9, 41, 88);
+    border-radius: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;   
+    transition: all .8s ease-in-out;
+}
+.start-page__btn > button:active{
+border: none;
+}

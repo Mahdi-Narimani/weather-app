@@ -1,0 +1,101 @@
+.backdropImage {
+    animation: weather 2s ease-in-out forwards;
+}
+
+@keyframes weather {
+    from {
+        filter: blur(10px);
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+.weather {
+    @apply w-[95%] h-[550px] mx-auto rounded-[20px] px-[80px] font-mono flex justify-between items-center;
+}
+
+.city-info {
+    @apply w-[35%] h-[450px] flex flex-col items-center;
+    animation: cityInfo 3s ease-in-out forwards;
+}
+
+@keyframes cityInfo {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.city-name {
+    @apply text-[100px] text-white font-semibold
+}
+
+.date {
+    @apply text-[25px] text-white font-semibold mb-4
+}
+
+.authorInfo {
+    @apply flex flex-col gap-8 w-[400px] h-[180px] rounded-[20px] py-[25px] bg-slate-400/90
+}
+
+.wind-info {
+    @apply w-full flex justify-center items-center gap-2 text-[20px] m-1
+}
+
+.wind-icon {
+    @apply w-[45px] h-[40px] bg-indigo-500 text-[2rem] text-white rounded-[5px] p-1 ml-5
+}
+
+.sun-info {
+    @apply flex justify-center items-center gap-2 text-[20px]
+}
+
+.sunrise {
+    @apply bg-blue-400 w-[45px] h-[40px] text-[2rem] text-yellow-400 rounded-[5px] p-1 ml-7
+}
+
+.sunset {
+    @apply bg-blue-900 w-[45px] h-[40px] text-[2rem] text-yellow-400 rounded-[5px] p-1 ml-16
+}
+
+.weather-info {
+    @apply w-[300px] h-[450px] rounded-[20px] bg-gradient-to-t from-indigo-900 to-indigo-400;
+    animation: weatherInfo 3s ease-in-out forwards;
+}
+
+@keyframes weatherInfo {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.badge-day {
+    @apply w-[100px] h-[30px] pt-[2.5px] bg-indigo-900 text-white font-bold rounded-[20px] m-[25px]
+}
+
+.weather-box {
+    @apply flex flex-col items-center
+}
+
+.weather-box>img {
+    @apply w-[150px]
+}
+
+.temperature {
+    @apply text-[5rem] font-semibold text-white my-2
+}
+
+.author-temp {
+    @apply text-[26px] font-semibold text-white
+}
+
+

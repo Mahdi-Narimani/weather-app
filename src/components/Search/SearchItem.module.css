@@ -1,0 +1,28 @@
+.search-item {
+    @apply w-full h-10 my-2 border border-indigo-200 rounded-[5px] cursor-pointer py-1 flex justify-around items-center transition-all delay-75 hover:bg-blue-300;
+    animation: showItem 1.5s ease-in-out forwards;
+}
+
+@keyframes showItem {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.badge-country {
+    @apply px-3 py-1 rounded-[10px] bg-indigo-950 text-white
+}
+
+.badge-city {
+    @apply px-7 p-1 rounded-[10px] bg-indigo-600 text-white text-[17px]
+}
+
+.badge-temp {
+    @apply px-2 p-1 rounded-[10px] bg-purple-950 text-white
+}
